@@ -1,0 +1,273 @@
+/* general style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+    background-color: black;
+}
+
+
+/* header style */
+header {
+    background: url('bilder/banner.jpg') center/cover;
+    height: 300px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid rgb(22, 22, 22);
+    transition: background 0.3s ease;
+}
+
+nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+/* Produkt style */
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+
+.section-products .single-product {
+    margin-bottom: 26px;
+    border: 1px solid rgb(72, 72, 72);
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+    transform: scale(1.2,1.2) rotate(5deg);
+}
+
+
+.section-products #product-4 .part-1::before {
+    background: url("bilder/rs6.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("bilder/m2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("bilder/c63.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("bilder/s1000rr.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+
+/* Sälja */
+.kontaktbody {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+.positionh1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+
+
+/* OM OSS */
+
+.oss {
+
+    text-align: center;
+    margin-top: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+
+}
+
+
+
+.kontaktbody {
+    background-color: #000000;
+    padding: 20px;
+}
+
+
+
+.kontakt-kort-body {
+    padding: 20px;
+    background-color: #000000;
+}
+
+
+
+/* INTRO */
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-content {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-content .btn {
+    margin-top: -500px; /* Adjust as needed for spacing between logo and buttons */
+}
+
+
+/* KÖP BIL */
+
+.card-body  {
+
+    background-color: #000000;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+
+
+/* SÄLJA BIL */
+
+.label {
+
+    color: linear-gradient(to right, #6e433f, #333333);
+}
+
+.m2 {
+
+    background: linear-gradient(to right, #5f0800, #333333);
+    
+    
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,300;1,400&display=swap');
+
+.mfont{
+    font-family: ar
+}
+
+.indfox {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #4d5257;
+    
+}
+.prisfont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5f0800;
+}
+
+/* intro logo */
+
+.fade-logo img {
+    animation: fadeInOut 5s infinite; 
+}
+
+@keyframes fadeInOut {
+0%, 100% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+}
